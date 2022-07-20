@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos  - display flex</title>
+    <style>
+        /* Os parâmetros abaixo são para determinar como será renderizado em tela este elemento */
+        .flex{
+            max-width: 300px; /* tamanho máx do elemento */
+            padding: 10px; /* espaçamento entre os objetos internos */
+            border: 2px solid black; /* configuração da borda */
+            display: flex; /* formato de visualização dos items em linha na horizontal */
+            /* Os item vazam da borda ainda, mas são mostrados lado a lado em espaçamento igual */
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- A classe flex é utilizada para passar os parâmetros de CSS para dentro do elemento DIV -->
+    <div class="flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+</body>
+</html>
